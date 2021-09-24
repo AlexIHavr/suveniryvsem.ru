@@ -1,0 +1,200 @@
+/*шрифты*/
+@font-face {
+	font-family: 'Cuprum';
+	src: url('../Fonts/Cuprum.ttf');
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+body {
+	color: black;
+	font-size: 25px;
+	text-align: center;
+	font-family: 'Cuprum';
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*убираем стрелки в инпутах числа*/
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+/*полоса прокрутки*/
+::-webkit-scrollbar-track { 
+	background-color: #32312e; 
+} 
+::-webkit-scrollbar-thumb { 
+	background-image: url('/Images/Scroll.png'); 
+	background-position:center; 
+	background-repeat:no-repeat; 
+	border-radius: 10px; 
+	background-color: #16CBC9;  
+	background-size: 10px;
+}
+::-webkit-scrollbar {
+	width: 15px; 
+}
+
+hr {
+	border: 1px solid black;
+}
+
+/*Логотип*/
+#Log {
+	width: 101%;
+	background-size: cover;
+	height: 600px;
+	background-image: url('/Images/Log.jpg');
+	position: fixed;
+	z-index: -1;
+}
+.log {
+	min-height: 600px;
+	z-index: -1;
+}
+
+
+#WrapperImg {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	opacity: 0;
+	background: rgba(0,0,0,0.8);
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	cursor: -webkit-zoom-out;
+	cursor: zoom-out;
+}
+#ScaleImg {
+	height: 80%;
+	top: 10%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: relative;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+#ScaleImg img {
+	margin: 0 20px;
+	height: 100%;
+}
+
+#Note-good {
+	position: fixed;
+	top: 20px;
+	z-index: -1;
+	max-height: 250px;
+	overflow-y: hidden;
+	left: 20px;
+}
+#Good-added, #Limit-good {
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 0px 5px lime;
+	        box-shadow: 0px 0px 5px lime;
+	background: lime;
+	padding: 7px 10px;
+	opacity: 0;
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+#Limit-good {
+	-webkit-box-shadow: 0px 0px 5px red;
+	        box-shadow: 0px 0px 5px red;
+	background: red;
+}
+
+
+
+.wrapper2 {
+	background-image: url("/Images/wood.jpg");
+	padding-top: 10px;
+}
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.header {
+	min-height: 100px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.content {
+	font-size: 27px;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+.inner-content, #Search-goods {
+	border: 2px solid black;
+	border-radius: 20px;
+	min-height: 100px;
+	padding: 15px 10px;
+	-webkit-box-shadow: -2px -2px 5px black;
+	        box-shadow: -2px -2px 5px black;
+}
+#Search-goods {
+	display: none;
+}
+.sidebar-1 {
+	padding-right: 10px;
+	width: 450px;
+	-webkit-box-flex: 0;
+	    -ms-flex: none;
+	        flex: none;
+}
+.inner-sidebar-1 {
+	border: 2px solid black;
+	-webkit-box-shadow: 2px -2px 5px black;
+	        box-shadow: 2px -2px 5px black;
+	border-left: none;
+	border-radius: 20px;
+	padding: 10px 5px;
+}
+.Lorem, .Lorem-main, .info-postcart {
+	text-align: justify;
+	padding: 10px;
+}
+.Lorem-main {
+	display: none;
+}
+.info-postcart {
+	display: none;
+}
+.inner-none {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	border: none;
+}
+.attach {
+	position: fixed !important;
+	top: 40px;
+}
+.mini-cart::-webkit-scrollbar {
+	display: none;
+}
+
+

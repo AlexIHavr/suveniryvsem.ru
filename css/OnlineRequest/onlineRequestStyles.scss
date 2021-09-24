@@ -1,0 +1,72 @@
+@import '/src/globalStyles';
+
+.OnlineRequest {
+  h1 {
+    margin-top: 0px;
+  }
+
+  .CloseOnline {
+    position: absolute;
+    right: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 1.3rem;
+    }
+    input {
+      margin: 10px auto;
+      width: 40%;
+    }
+    .SendOnlineRequest {
+      margin: 0 auto;
+      width: 30%;
+    }
+  }
+
+  .ThanksOnline {
+    display: none;
+    margin-bottom: 0;
+  }
+
+  $onlineRequestWidth: 40%;
+  position: fixed;
+  top: 40px;
+  left: (100% - $onlineRequestWidth) / 2;
+  width: $onlineRequestWidth;
+  padding: 20px 40px;
+  box-shadow: 0 0 5px $activeColor;
+  background-color: $backgroundColor;
+  color: $baseTextColor;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  z-index: 3;
+
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+
+  transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+}
+
+.activateOnlineRequest {
+  transform: scale(1) !important;
+  -webkit-transform: scale(1) !important;
+  -moz-transform: scale(1) !important;
+  -ms-transform: scale(1) !important;
+  -o-transform: scale(1) !important;
+}

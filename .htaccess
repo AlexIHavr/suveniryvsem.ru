@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /
+
+#Открытие файла по умолчанию
+DirectoryIndex Index.php
+
+#Перенаправление каталогов на .php (с игнорированием регистра - [NC])
+RewriteRule ^([^.]+)$ $1.php [NC]

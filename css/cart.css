@@ -1,0 +1,730 @@
+body {
+	font-family: Cuprum, Arial;
+}
+
+/*Описание имен корзины*/
+.name-cart {
+	text-align: center;
+}
+.name-cart h1 {
+	margin: 10px 0;
+}
+#Points-main-cart {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+#Points-main-cart i {
+	margin: 0 20px;
+}
+.point1, .point2 {
+	border: 2px solid black;
+	padding: 10px;
+}
+.point1 {
+	position: relative;
+	border-radius: 10px;
+	background: white;
+}
+.point2 {
+	border-radius: 10px;
+}
+.change-grey {
+	background: white;
+	background-color: #E6E6E6;
+	color: grey;
+	border-color: grey;
+}
+
+
+/*Корзина и мини-корзина*/
+
+.goods, #Results {
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+#Results {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+#Acount-search {
+	font-weight: bold;
+	font-size: 30px;
+	margin: 10px 0;
+	margin-bottom: 20px;
+	border-bottom: 2px solid black;
+	padding-bottom: 5px;
+	border-radius: 20px; 
+}
+.way-good {
+	margin: 5px;
+	font-size: 25px;
+	border-bottom: 1px solid black;
+	border-radius: 10px;
+	padding-bottom: 5px;
+}
+.way-good a, #Goods-slider a {
+	text-decoration: none;
+	color: black;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	font-style: italic;
+}
+.way-good a:hover, #Goods-slider a:hover {
+	color: blue;
+}
+
+.cart {
+	flex-basis: 215px;
+	border: 1px solid black;
+	-webkit-box-shadow: 2px 2px 5px black;
+	        box-shadow: 2px 2px 5px black;
+	border-radius: 10px;
+	text-align: center;
+	margin: 15px;
+}
+.cart h4 {
+	margin: 5px;
+}
+.cart .margin-p {
+	margin: 5px;
+}
+.cart .add-cart {
+	border: 1px solid black;
+	width: 110px;
+	border-radius: 5px;
+	height: 27px;
+	font-size: 16px;
+	background-color: lime; 
+	-webkit-box-shadow: 0px -2px 0px #009F00 inset; 
+	        box-shadow: 0px -2px 0px #009F00 inset;
+	-webkit-transition: 0.1s ease-in-out;
+	transition: 0.1s ease-in-out;
+	cursor: pointer;
+	position: relative;
+	text-align: left;
+	bottom: 8px;
+}
+.cart .add-cart:hover {
+	background-color: #00E100; 
+}
+.cart .add-cart:active {
+	-webkit-box-shadow: 0px 2px 0px #009F00 inset;
+	        box-shadow: 0px 2px 0px #009F00 inset;
+	background-color: #00C800;
+}
+.goods img, #Search-goods img {
+	height: 105px;
+	margin: 5px 0;
+}
+.add-cart .fa {
+	font-size: 21px;
+	position: absolute;
+	right: 3px;
+	top: 2px;
+}
+#Mini-cart {
+	display: none;
+	border-bottom: 2px solid black;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+.mini-cart , .my-cart {
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 15px;
+	width: 350px;
+	font-size: 23px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	position: relative;
+}
+.my-cart {
+	padding: 10px;
+}
+.mini-cart {
+	padding-top: 10px;
+	width: auto;
+	max-height: 500px;
+	overflow-y: auto;
+}
+.mini-cart div[selected-good] {
+	margin-bottom: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px; 
+}
+.mini-cart div[selected-good]:last-child {
+	border-bottom: 0px solid black;
+	margin-bottom: 0px;
+}
+#Sum-goods {
+	display: inline-block;
+	font-weight: bold;
+}
+h3.afterCart {
+	margin: 5px auto;
+}
+i.arrow-down {
+	top: 1290px;
+}
+i.arrow-up {
+	top: 826px;
+}
+i.arrow-down, i.arrow-up {
+	position: absolute;
+	display: none;
+	cursor: pointer;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	color: #313131;
+	left: 200px;
+}
+i.arrow-up:hover, i.arrow-down:hover {
+	color: black;
+}
+#Go-to-cart {
+	width: 200px;
+	margin: 10px auto;
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#08AEEA), to(#2AF598));
+	background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+}
+
+
+
+#Intro-main-cart {
+	border-bottom: 1px solid black;
+	margin-bottom: 10px;
+	height: 35px;
+}
+input.in {
+	width: 55px;
+	height: 30px;
+	text-align: center;
+	font-size: 18px;
+	border: 2px solid black;
+	outline-color: black;
+	left: -60px;
+	top: -5px;
+	background: #EAC17D;
+	padding: 5px 0px;
+}
+.buy-good {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+}
+.main-cart a , .info-contacts a {
+	color: #A20000;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+	text-decoration: none;
+	font-weight: bold;
+}
+.main-cart a {
+	position: absolute;
+	left: 10px;
+}
+.main-cart a:hover, a.cartCSS:hover, .info-contacts a:hover {
+	color: red;	 
+}
+.success-send a, .error-send a {
+	position: static;
+}
+.my-cart {
+	display: block;
+	width: 100%;
+}
+.main-cart i {
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+i.change {
+	font-size: 40px;
+}
+i.delete {
+	font-size: 23px;
+	cursor: pointer;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+i.delete:hover, .main-cart i.minus:hover {
+	color: red;
+}
+.main-cart i.delete {
+	right: 10px;
+	position: absolute;
+}
+.main-cart i.plus:hover {
+	color: green;
+}
+.main-cart i.minus {
+	font-size: 23px;
+	cursor: pointer;
+	position: absolute;
+	right: 350px;
+}
+.main-cart i.plus {
+	font-size: 23px;
+	position: absolute;
+	right: 205px;
+	cursor: pointer;
+}
+.my-cart span.valueC {
+	font-size: 23px;
+	position: absolute;
+	right: 242px;
+}
+.my-cart .key-cart {
+	display: inline-block;
+	max-width: 300px;
+	text-align: center;
+	margin-left: 10px;
+}
+.my-cart .valueD {
+	font-size: 23px;
+	position: absolute;
+	right: 55px;
+	width: 100px;
+}
+.my-cart .hr-line {
+	color: black;
+	height: 1px;
+	background: black;
+	border: none;
+	opacity: 0.8;
+}
+.my-cart .key-cost {
+	font-size: 22px;
+	position: absolute;
+	right: 450px;
+}
+.my-cart .img-cart {
+	height: 80px;
+}
+.my-cart .remove {
+	position: absolute;
+	border-radius: 10px;
+	background-color: red;
+	border: 1px solid black;
+	-webkit-box-shadow: 0px -3px 0px #A70000 inset;
+	        box-shadow: 0px -3px 0px #A70000 inset;
+	height: 30px;
+	width: 120px;
+	font-size: 18px;
+	font-family: Cuprum, Arial;
+	cursor: pointer;
+	opacity: 0.8;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	position: absolute;
+	left: 44%;
+}
+.my-cart .remove:hover {
+	opacity: 1;
+}
+.my-cart .remove:active {
+	-webkit-box-shadow: 0px 3px 0px #A70000 inset;
+	        box-shadow: 0px 3px 0px #A70000 inset;
+}
+.img-cart2, .img-cart {
+	cursor: -webkit-zoom-in;
+	cursor: zoom-in;
+}
+.cart-left {
+	width: 250px;
+}
+
+/*Названия формы*/
+#Intro-main-cart > div {
+	display: inline-block;
+	position: absolute;
+}
+.cart-good {
+	left: 36px;
+}
+.cart-value {
+	right: 250px;
+}
+.cart-price {
+	right: 35px;
+}
+.cost-one-good {
+	position: absolute;
+	right: 415px;
+}
+#End-main-cart {
+	height: 25px;
+}
+.key-sum2 {
+	position: absolute;
+	left: 69%;
+}
+.key-sum {
+	position: absolute;
+	right: 5%;
+}
+#Empty-main-cart {
+	display: none;
+	height: 80px;
+}
+#Empty-main-cart a {
+	position: static !important;
+}
+
+/*Форма*/
+.form {
+	text-align: left;
+	border: 1px solid black;
+	width: 420px;
+	margin: 0 auto;
+	border-radius: 10px;
+	-webkit-box-shadow: 3px 3px 3px black;
+	        box-shadow: 3px 3px 3px black;
+	position: relative;
+	height: 560px;
+	display: none;
+}
+.form p {
+	padding-left: 15px;
+	font-size: 20px;
+	margin: 30px 0;
+	position: relative;
+}
+.form input, .ecomment {
+	position: absolute;
+	right: 37px;
+	border: 1px solid grey;
+	width: 230px;
+	padding: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 3px grey;
+	        box-shadow: 0px 0px 3px grey;
+	font-family: Arial;
+}
+.ecomment {
+	resize: none;
+}
+.form .send-email {
+	border: 1px solid black;
+	position: absolute;
+	bottom: -210px;
+	width: 110px;
+	margin: 10px 0;
+	border-radius: 5px;
+	left: 154px;
+	height: 33px;
+	font-size: 18px;
+	background-color: lime; 
+	-webkit-box-shadow: 0px -4px 0px #009F00 inset; 
+	        box-shadow: 0px -4px 0px #009F00 inset;
+	-webkit-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+}
+.form .send-email:hover {
+	background-color: #00E100; 
+}
+.form .send-email:active {
+	-webkit-box-shadow: 0px 2px 0px #009F00 inset;
+	        box-shadow: 0px 2px 0px #009F00 inset;
+	background-color: #00C800;
+}
+button:focus {
+    outline: none;
+}
+:focus::-webkit-input-placeholder { color: transparent; }
+:focus::-moz-placeholder          { color: transparent; }
+:focus:-moz-placeholder           { color: transparent; }
+:focus:-ms-input-placeholder      { color: transparent; }
+
+.form .error {
+	border: 1px solid red;
+	outline: none;
+}
+.form .nfild1, .form .check-email {
+	color: red;
+	font-size: 15px;
+	position: absolute;
+	margin: 0;
+	padding-left: 195px;
+	margin-top: -20px;
+}
+.form .check-email {
+	padding-left: 40px;
+}
+.note-star {
+	font-size: 12px;
+	position: absolute;
+	right: 14px;
+	top: 6px;
+}
+.for-note-star {
+	font-size: 15px;
+}
+#Note-star {
+	position: absolute;
+	bottom: 25px;
+}
+
+
+
+/*Кнопки формы*/
+.buttons-cart {
+	text-align: center;
+}
+.buttons-cart .button-cart2 {
+	display: none;
+	margin-top: 20px;
+}
+.button-cart1, .button-cart2 {
+	border: 1px solid black;
+	width: 110px;
+	border-radius: 5px;
+	height: 30px;
+	font-size: 17px;
+	background-color: white; 
+	-webkit-box-shadow: 0px -3px 0px #D4D4D4 inset; 
+	        box-shadow: 0px -3px 0px #D4D4D4 inset;
+	-webkit-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+	margin: 0 auto;
+}
+.button-cart1:hover, .button-cart2:hover {
+	background-color: #EEEEEE; 
+}
+.button-cart1:active, .button-cart2:active {
+	-webkit-box-shadow: 0px 2px 0px #BFBFBF inset;
+	        box-shadow: 0px 2px 0px #BFBFBF inset;
+	background-color: #E3E3E3;
+}
+
+/*Окна успеха и ошибки*/
+.main-cart .success-send, .main-cart .error-send {
+	text-align: center;
+	border: 1px solid black;
+	width: 700px;
+	margin: 0 auto;
+	border-radius: 10px;
+	-webkit-box-shadow: 3px 3px 3px black;
+	        box-shadow: 3px 3px 3px black;
+	padding-bottom: 20px;
+	display: none;
+}
+
+
+/*Прелоадер запроса*/
+#Preloader {
+	display: none;
+	position: fixed;
+	top: calc(50vh - 50px);
+	left: calc(50vw - 50px);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	box-shadow: 0 7px 5px #47FFEE;
+	background: rgba(0,0,0,0);
+	z-index: 100;
+	animation: animateLoader 2s linear infinite;
+	animation-play-state: paused;
+}
+
+
+@keyframes animateLoader {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
+
+
+/*Вход в админку*/
+.name-admin-panel {
+	margin: 10px auto;
+}
+
+form.form-admin {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	margin: 0 auto;
+}
+form.form-admin > * {
+	margin-bottom: 10px;
+}
+form.form-admin i.fa-user-circle {
+	font-size: 70px;
+	text-shadow: 0 0 5px black;
+	color: #20DBCE;
+}
+form.form-admin > input, form.form-goods-admin > input, .select-categories {
+	font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-family: Cuprum, Arial;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: 0;
+}
+form.form-admin > input::-webkit-input-placeholder, form.form-goods-admin > input::-webkit-input-placeholder {
+	color: black;
+	opacity: 0.8;
+}
+form.form-admin > input:not([name="enter-admin"]):focus, form.form-goods-admin > input:not(.setting-good):focus, .select-categories:focus {
+	border-color: blue;
+	-webkit-box-shadow: 0px 0px 5px blue;
+	        box-shadow: 0px 0px 5px blue;
+}
+form.form-admin > input[name="enter-admin"], form.form-goods-admin .setting-good {
+	width: 200px;
+	margin: 0 auto;
+	box-shadow: 0px 0px 5px black;
+	background: #20C1CE;
+	cursor: pointer;
+}
+form.form-admin > input[name="enter-admin"]:active, form.form-goods-admin .setting-good:active {
+	box-shadow: none;
+}
+
+.errors-admin {
+	color: red;
+	margin-bottom: 0px;
+	text-shadow: 0 0 1px black;
+}
+
+
+
+
+/*Админка*/
+.choose-settings {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+.choose-settings > div {
+	border: 2px solid black;
+	border-radius: 20px;
+	-webkit-box-shadow: 4px 4px 8px black;
+	        box-shadow: 4px 4px 8px black;
+	padding: 10px;
+	width: 230px;
+	cursor: pointer;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.choose-settings .add-new-good {
+	background: #00DB00;
+}
+.choose-settings .change-good {
+	background: #4594FD;
+}
+.choose-settings .delete-good {
+	background: red;
+}
+.choose-settings > div:hover {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+.settings-goods form.form-goods-admin {
+	width: 450px;
+	margin: 0 auto;
+	border: 2px solid black;
+	box-shadow: 0px 0px 5px black;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.settings-goods form.form-goods-admin > *:not(div) {
+	margin-bottom: 15px;
+}
+
+form.form-goods-admin > div[for-input] {
+	font-size: 25px;
+	font-weight: bold;
+}
+form.form-goods-admin .setting-good {
+	background: #00DB00;
+	font-size: 25px !important;
+}
+.select-categories {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none !important;
+    background: url(../Images/arrow-down.png) no-repeat right white;
+    background-size: 20px;
+}
+form.form-goods-admin input[type="file"] {
+	display: none !important;
+}
+form.form-goods-admin label {
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 23px;
+	font-weight: bold;
+	box-shadow: 0 0 5px black;
+	cursor: pointer;
+	width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	background: #88D5FF;
+	transition: 0.2s;
+}
+form.form-goods-admin label:active {
+	box-shadow: none;
+}
+form.form-goods-admin label:after {
+	content: '\21BA';
+	right: 5px;
+	position: absolute;
+	color: #1F71C6;
+	text-shadow: 0 0 1px black;
+}
+
+
+.message-admin {
+	margin: 0px auto;
+	text-shadow: 0 0 1px black;
+	margin-bottom: 0 !important;
+}
+.error-settings {
+	color: red;
+}
+.success-settings {
+	color: #00DF00;
+}
